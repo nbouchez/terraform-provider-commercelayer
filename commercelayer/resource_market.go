@@ -62,7 +62,12 @@ func resourceMarket() *schema.Resource {
 							Type:        schema.TypeString,
 							Optional:    true,
 						},
-						"reference": {
+						"code": {
+							Description: "A unique code to identify the market.",
+							Type:     schema.TypeString,
+							Optional: true,
+						},
+						reference": {
 							Description: "A string that you can use to add any external identifier to the resource. This " +
 								"can be useful for integrating the resource to an external system, like an ERP, a " +
 								"marketing tool, a CRM, or whatever.",
